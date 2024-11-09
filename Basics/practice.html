@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .grid-container{
+        background-color: indianred;
+        padding: 20px;
+        display: grid;
+        grid-template-areas: 'header header header header header'
+         'menu content content content right'
+        'menu content content content right'
+        'menu footer footer footer footer';
+      }
+      .grid-item{
+        background-color: wheat;
+        border: 1px solid black;
+        padding: 20px;
+        font-size: 40px;
+        text-align: center;
+      }
+      #grid1{
+        grid-area: header;
+      }
+      #grid2{
+        grid-area: menu;
+      }
+      #grid3{
+        grid-area: content;
+      }
+      #grid4{
+        grid-area: right;
+      }
+      #grid5{
+        grid-area: footer;
+      }
+      .radius{
+        height:100%px;
+        width: 100%px;
+        background-image: url('./../pexels-frank-cone-140140-3908080.jpg');
+      }
+    </style>
+</head>
+<body>
+   <div class="grid-container">
+    <div class="grid-item" id="grid1">header</div>
+    <div class="grid-item" id="grid2">menu</div>
+    <div class="grid-item" id="grid3">content</div>
+    <div class="grid-item" id="grid4">right</div>
+    <div class="grid-item" id="grid5">footer</div>
+   </div>
+   <div class="radius"></div>
+</body>
+</html>

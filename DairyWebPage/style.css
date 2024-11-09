@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Concert One", sans-serif;
+}
+.image{
+    min-height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 10s infinite;
+}
+@keyframes changeBackground {
+    0% {
+        background-image: url('dairylogo1.jpg');
+    }
+    33% {
+        background-image: url('dairylogo2.jpg');
+    }
+    66% {
+        background-image: url('dairylogo3.jpg');
+    }
+    100% {
+        background-image: url('dairylogo.jpg');
+    }
+}
+.logo{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+.nav-links{
+    text-align: right;
+    font-size: 20px;
+}
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+}
+.nav-links ul li a{
+    background: white;
+    display: flex;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 22px;
+}
+.nav-links ul li a:hover{
+    transition: 0.2s;
+    background: rgb(56,130,209);
+    color: white;
+    transform: translate(0,-10%);
+}
+.text-box{
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    transform: translate(-750px,220px);
+    font-size: 20px;
+}
+.text-box a{
+    border: 1px dashed whitesmoke;
+    text-decoration: none;
+    color: azure;
+    transition: 0.5s;
+}
+.text-box a:hover{
+    border: black;
+    background-color: blueviolet;
+}
+.text-box h1{
+    font-size: 50px;
+    font-weight:bolder;
+}
+.footer{
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+
+body{
+    background-color:#e0d7f6;
+}
+.about-image{
+    height: 50vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 10s infinite;
+}
+@keyframes changeBackground {
+    0% {
+        background-image: url('dairylogo1.jpg');
+    }
+    33% {
+        background-image: url('dairylogo2.jpg');
+    }
+    66% {
+        background-image: url('dairylogo3.jpg');
+    }
+    100% {
+        background-image: url('dairylogo.jpg');
+    }
+}
+.about-image h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: aliceblue;
+    padding-top: 10px;
+}
+.about p{
+    font-size: 20px;
+}
+.about{
+    width: 70%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    padding: 30px 2px;
+    flex-basis: 48%;
+    overflow: hidden;
+}
+
+.about-col a{
+    border: 1px dashed black;
+    columns: black;
+    transition: 1s;
+    text-decoration: none;
+}
+.about-col a:hover{
+    background-color:blueviolet;
+}
+.about-col img{
+    width: 100%;
+    box-shadow: 0 0 20px black;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    background-color: #e0d7f6; 
+    padding: 100px;
+    border-radius: 10px;
+}
+
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+}
+.product-card:hover{
+    transform: translate(0,-5%);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card .highlight {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+ h1.location-contact {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.contact-us-form{
+	width:600px;
+	float:right;
+}
+.contact-us-form h2{
+    text-align:left;
+    font-size: 32px;
+}
+form{
+	display:inline-block;
+}
+label{
+	display:inline-block;
+	padding-bottom: 15px;
+	line-height: 15px;
+	
+}
+.about-us-info{
+    margin-left: 15rem;
+	margin-top:60px;
+}
+input[type="text"], input[type="email"], textarea {
+	width: 100%;
+	background-color:lightblue;
+	padding: 10px;
+	border-color: black;
+    color: white;
+    font-size: 20px;
+}
+input[type="submit"], input[type="reset"] {
+	background-color: lightblue;
+	border: 3px dashed white;
+	padding:7px;
+	color: black;
+	font-size: 18px;
+	width: 125px;
+	margin: 30px;
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+	border: 3px dashed white;
+	color: white;
+	background-color: black;
+    cursor: pointer;
+}
+.social-media i{
+    font-size: 12px;
+    color: blue;
+}

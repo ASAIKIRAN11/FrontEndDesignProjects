@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHARAT MATHA KI JAII.!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin-top: 2rem;
+            padding: 0;
+            font-family: sans-serif;
+            background: #f7f7f7;
+        }
+        .flag-container{
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            position: relative;
+        }
+        .frame{
+            width: 100px;
+            height: 100px;
+        }
+        .saffron{
+            background-color: #ff9933;
+        }
+        .white{
+            background-color: #ffffff;
+        }
+        .green{
+            background-color: #138808;
+        }
+        .chakra-container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .chakra-img{
+            max-width: 100%;
+            width: 100px;
+            background-image: url("chakra-img.png");
+            animation: rotate 4s linear infinite;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flag-container">
+        <div class="saffron frame"></div>
+        <div class="white frame"></div>
+        <div class="green frame"></div>
+        <div class="chakra-container"></div>
+        <div class="chakra-img"></div>
+    </div>
+</body>
+</html>
